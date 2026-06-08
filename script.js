@@ -197,17 +197,22 @@ set1: [
 };
 
 /* ================= GLOBAL ================= */
-let currentTopic="history";
-let currentSet="set1";
-let questions=allTopics[currentTopic][currentSet];
+let currentTopic = "history";
+let currentSet = "set1";
+let questions = allTopics[currentTopic][currentSet];
 
-let index=0;
-let selected={};
-let marked={};
-let resultStatus={};
+let index = 0;
 
+let selected = {};
+let marked = {};
+let resultStatus = {};
+
+// Wrong Questions Retry Feature
+let wrongQuestions = [];
+
+// Timer
 let timer;
-let time=20;
+let time = 20;
 
 /* ================= LOAD TOPIC ================= */
 function loadTopic(topic){
@@ -226,14 +231,21 @@ reset();
 
 /* ================= RESET ================= */
 function reset(){
+
+document.getElementById("resultBox").style.display="none";
+document.getElementById("quizBox").style.display="block";
+
 index=0;
 selected={};
 marked={};
 resultStatus={};
 
+clearInterval(timer);
+
 load();
 render();
 startTimer();
+
 }
 
 /* ================= LOAD QUESTION ================= */
@@ -356,54 +368,55 @@ if(time<=0) next();
 /* ================= SUBMIT ================= */
 function submitQuiz(){
 
+clearInterval(timer);
+
 let score=0;
 resultStatus={};
+wrongQuestions=[];
 
 questions.forEach((q,i)=>{
+
 if(selected[i]===q.answer){
 score++;
 resultStatus[i]="correct";
 }else{
 resultStatus[i]="wrong";
-// ===== AUTO NEXT SET =====
-setTimeout(() => {
-let nextSet = getNextSetName();
-
-if (nextSet) {
-currentSet = nextSet;
-questions = allTopics[currentTopic][currentSet];
-
-reset();   // auto load next set
-document.getElementById("quizBox").style.display="block";
-document.getElementById("resultBox").style.display="none";
-
-} else {
-alert("🎉 All sets completed for " + currentTopic);
+wrongQuestions.push(q);
 }
-}, 1200);
-}
+
 });
 
 document.getElementById("quizBox").style.display="none";
 document.getElementById("resultBox").style.display="block";
 
-document.getElementById("scoreText").innerText=
-"Score: "+score+"/"+questions.length;
+document.getElementById("scoreText").innerHTML=
+`
+<h3>Score: ${score}/${questions.length}</h3>
+<button onclick="retryWrongQuestions()">
+🔄 Retry Wrong Questions (${wrongQuestions.length})
+</button>
+`;
 
 let rev=document.getElementById("review");
 rev.innerHTML="";
 
 questions.forEach((q,i)=>{
+
 let div=document.createElement("div");
+
 div.innerHTML=
 "<b>Q:</b> "+q.q+
 "<br><b>Your:</b> "+(q.options[selected[i]]||"Not Attempted")+
 "<br><b>Correct:</b> "+q.options[q.answer]+
-"<br><b>Exp:</b> "+q.exp;
+"<br><b>Exp:</b> "+q.exp+
+"<hr>";
+
 rev.appendChild(div);
+
 });
 
 render();
+
 }
 
 /* ================= INIT ================= */
@@ -421,4 +434,29 @@ if (i < sets.length - 1) {
 return sets[i + 1];
 }
 return null;
+}
+
+function retryWrongQuestions(){
+
+if(wrongQuestions.length===0){
+alert("🎉 कोई गलत प्रश्न नहीं है");
+return;
+}
+
+questions=[...wrongQuestions];
+
+document.getElementById("resultBox").style.display="none";
+document.getElementById("quizBox").style.display="block";
+
+index=0;
+selected={};
+marked={};
+resultStatus={};
+
+clearInterval(timer);
+
+load();
+render();
+startTimer();
+
 }
