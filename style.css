@@ -259,5 +259,52 @@ body{
 
 
 
+@media screen and (max-width: 768px){
 
+/* 📱 MOBILE = 9:16 STYLE */
+
+.app{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+/* MAIN FULL WIDTH */
+.main{
+    flex:none;
+    width:100%;
+    padding:100px 10px 10px;
+}
+
+/* SIDEBAR BELOW */
+.sidebar{
+    flex:none;
+    width:100%;
+    padding:10px;
+    border-left:none;
+    border-top:1px solid #ddd;
+}
+
+/* HEADER STACK */
+.header{
+    flex-direction:column;
+    gap:8px;
+    text-align:center;
+}
+
+/* PALETTE GRID */
+#palette{
+    grid-template-columns:repeat(5,1fr);
+}
+
+/* QUESTION TEXT SMALL */
+#question{
+    font-size:18px;
+}
+
+.option{
+    font-size:15px;
+}
+
+}
 
