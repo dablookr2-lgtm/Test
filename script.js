@@ -251,36 +251,47 @@ startTimer();
 /* ================= LOAD QUESTION ================= */
 function load(){
 
-let q=questions[index];
+let q = questions[index];
 
-document.getElementById("qText").innerText=
-"Q"+(index+1)+": "+q.q;
+document.getElementById("qText").innerText =
+"Q" + (index + 1) + ": " + q.q;
 
-document.getElementById("status").innerText=
-currentTopic+" | "+currentSet+" | "+(index+1)+"/"+questions.length;
+document.getElementById("status").innerText =
+currentTopic + " | " + currentSet + " | " + (index + 1) + "/" + questions.length;
 
-let box=document.getElementById("options");
-box.innerHTML="";
+let box = document.getElementById("options");
+box.innerHTML = "";
 
 q.options.forEach((o,i)=>{
-let div=document.createElement("div");
-div.className="option";
-div.innerText=o;
 
-if(selected[index]==i){
+let div = document.createElement("div");
+div.className = "option";
+div.innerText = o;
+
+if(selected[index] === i){
 div.classList.add("selected");
 }
 
-div.onclick=()=>{
-selected[index]=i;
+div.onclick = ()=>{
+
+// Select / Unselect Feature
+if(selected[index] === i){
+delete selected[index];
+}else{
+selected[index] = i;
+}
+
 load();
 render();
+
 };
 
 box.appendChild(div);
+
 });
 
 updateBar();
+
 }
 
 /* ================= NAV ================= */
