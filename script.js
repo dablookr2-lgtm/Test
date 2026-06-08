@@ -367,6 +367,76 @@ set1: [
   },
 
   {
+    q: "BIPEX-2024 का सही स्वरूप क्या है?",
+    options: [
+      "Bihar Industrial Expo",
+      "Bihar Philatelic Exhibition",
+      "Bihar Public Examination",
+      "Bihar Policy Expo"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 का पूरा नाम Bihar Philatelic Exhibition है, जो India Post द्वारा आयोजित स्टाम्प प्रदर्शनी है।"
+  },
+  {
+    q: "BIPEX-2024 का आयोजन किस शहर में किया गया था?",
+    options: [
+      "गया",
+      "दरभंगा",
+      "पटना",
+      "भागलपुर"
+    ],
+    answer: 2,
+    exp: "BIPEX-2024 का आयोजन पटना (Gyan Bhawan) में किया गया था।"
+  },
+  
+  {
+    q: "BIPEX-2024 किस विभाग द्वारा आयोजित किया गया था?",
+    options: [
+      "रेलवे विभाग",
+      "डाक विभाग (India Post)",
+      "शिक्षा विभाग",
+      "संस्कृति विभाग"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 का आयोजन India Post (Department of Posts) द्वारा किया गया था।"
+  },
+  
+  {
+    q: "BIPEX-2024 का मुख्य उद्देश्य क्या था?",
+    options: [
+      "खेल प्रतियोगिता",
+      "डाक टिकट एवं डाक इतिहास का प्रचार",
+      "औद्योगिक विकास",
+      "कृषि सुधार"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 का मुख्य उद्देश्य डाक टिकट और डाक इतिहास को बढ़ावा देना था।"
+  },
+  
+  {
+    q: "BIPEX-2024 में किस प्रकार के संग्रह प्रमुख आकर्षण थे?",
+    options: [
+      "सिक्के और हथियार",
+      "स्टाम्प, पोस्टकार्ड और पत्र",
+      "मूर्तियाँ",
+      "कृषि उपकरण"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 में स्टाम्प, पोस्टकार्ड और पत्र प्रमुख आकर्षण थे।"
+  },
+  {
+    q: "BIPEX-2024 का मुख्य theme क्या था?",
+    options: [
+      "Digital India",
+      "Postal Heritage of Bihar",
+      "Smart Bihar",
+      "Green Bihar"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 का थीम Postal Heritage of Bihar था।"
+  },
+
+  {
     q: "एम्स दरभंगा 'विकास और कल्याण का संतुलन' कैसे है?",
     options: [
       "केवल विकास",
@@ -388,6 +458,207 @@ set1: [
     ],
     answer: 2,
     exp: "मानव विकास सूचकांक में स्वास्थ्य एक महत्वपूर्ण घटक है।"
+  },
+
+  {
+    q: "BIPEX-2024 को किस प्रकार के national initiative के रूप में देखा जाता है?",
+    options: [
+      "Industrial investment initiative",
+      "Cultural heritage documentation initiative",
+      "Defense modernization initiative",
+      "Agricultural reform initiative"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 को cultural heritage documentation initiative के रूप में देखा जाता है क्योंकि यह डाक इतिहास और फिलेटली संस्कृति को संरक्षित करता है।"
+  },
+  {
+    q: "BIPEX-2024 का सबसे महत्वपूर्ण institutional stakeholder कौन था?",
+    options: [
+      "Ministry of Education",
+      "India Post (Department of Posts)",
+      "NITI Aayog",
+      "Ministry of Culture only"
+    ],
+    answer: 1,
+    exp: "BIPEX-2024 का प्रमुख institutional stakeholder India Post (Department of Posts) था।"
+  },
+  {
+    q: "BIPEX-2024 जैसे आयोजन किस प्रकार की “public history” को बढ़ावा देते हैं?",
+    options: [
+      "Oral storytelling only",
+      "Documentary and archival history",
+      "Political history only",
+      "Economic history only"
+    ],
+    answer: 1,
+    exp: "ऐसे आयोजन documentary और archival history को बढ़ावा देते हैं।"
+  },
+  {
+    q: "Philately-based exhibitions का सबसे प्रमुख analytical value क्या है?",
+    options: [
+      "Economic forecasting",
+      "Historical communication tracing",
+      "Military planning",
+      "Legal documentation"
+    ],
+    answer: 1,
+    exp: "Philately-based exhibitions ऐतिहासिक communication tracing में मदद करते हैं।"
+  },
+  {
+    q: "BIPEX-2024 को “knowledge dissemination platform” क्यों कहा जा सकता है?",
+    options: [
+      "यह केवल संग्रह है",
+      "यह डाक इतिहास और सांस्कृतिक ज्ञान का प्रसार करता है",
+      "यह व्यापार मेला है",
+      "यह खेल आयोजन है"
+    ],
+    answer: 1,
+    exp: "यह डाक इतिहास और सांस्कृतिक ज्ञान का प्रसार करता है।"
+  },
+  
+  {
+    q: "BIPEX-2024 किस प्रकार की “heritage economy” को support करता है?",
+    options: [
+      "Industrial heritage economy",
+      "Cultural and archival economy",
+      "Financial derivatives economy",
+      "Defense economy"
+    ],
+    answer: 1,
+    exp: "यह cultural और archival economy को support करता है।"
+  },
+  
+  {
+    q: "Philately को “educational heritage tool” क्यों माना जाता है?",
+    options: [
+      "यह केवल hobby है",
+      "यह ऐतिहासिक घटनाओं और व्यक्तित्वों को visual form में प्रस्तुत करता है",
+      "यह केवल निवेश साधन है",
+      "यह खेल गतिविधि है"
+    ],
+    answer: 1,
+    exp: "यह ऐतिहासिक घटनाओं और व्यक्तित्वों को visual रूप में प्रस्तुत करता है।"
+  },
+  {
+    q: "BIPEX-2024 का सबसे सही systemic objective क्या है?",
+    options: [
+      "Financial inclusion",
+      "Cultural awareness and postal heritage preservation",
+      "Industrial expansion",
+      "Military awareness"
+    ],
+    answer: 1,
+    exp: "इसका उद्देश्य cultural awareness और postal heritage preservation है।"
+  },
+  {
+    q: "BIPEX-2024 किस प्रकार की “soft governance strategy” का उदाहरण है?",
+    options: [
+      "Economic coercion",
+      "Cultural engagement strategy",
+      "Military intervention strategy",
+      "Judicial activism"
+    ],
+    answer: 1,
+    exp: "यह cultural engagement strategy का उदाहरण है।"
+  },
+  {
+    q: "Philately exhibitions का सबसे महत्वपूर्ण sociological impact क्या है?",
+    options: [
+      "Political polarization",
+      "Historical consciousness development",
+      "Economic inflation",
+      "Technological automation"
+    ],
+    answer: 1,
+    exp: "यह historical consciousness को विकसित करता है।"
+  },
+  {
+    q: "BIPEX-2024 किस प्रकार के “cultural capital” को बढ़ाता है?",
+    options: [
+      "Financial capital",
+      "Symbolic and heritage capital",
+      "Military capital",
+      "Industrial capital"
+    ],
+    answer: 1,
+    exp: "यह symbolic और heritage capital को बढ़ाता है।"
+  },
+  {
+    q: "BIPEX-2024 जैसे आयोजन किस concept को strengthen करते हैं?",
+    options: [
+      "Hard infrastructure",
+      "Soft cultural infrastructure",
+      "Military infrastructure",
+      "Digital infrastructure only"
+    ],
+    answer: 1,
+    exp: "यह soft cultural infrastructure को strengthen करते हैं।"
+  },
+  {
+    q: "BIPEX-2024 का सबसे सही long-term impact क्या हो सकता है?",
+    options: [
+      "Export growth",
+      "Cultural tourism and heritage awareness",
+      "Industrial production",
+      "Banking reform"
+    ],
+    answer: 1,
+    exp: "इसका long-term impact cultural tourism और heritage awareness है।"
+  },
+  {
+    q: "Philately में “archival value” का क्या अर्थ है?",
+    options: [
+      "आर्थिक मूल्य",
+      "ऐतिहासिक दस्तावेज़ी महत्व",
+      "तकनीकी मूल्य",
+      "राजनीतिक मूल्य"
+    ],
+    answer: 1,
+    exp: "Archival value का अर्थ ऐतिहासिक दस्तावेज़ी महत्व है।"
+  },
+  {
+    q: "BIPEX-2024 को cultural policy framework में क्यों रखा जा सकता है?",
+    options: [
+      "यह खेल आयोजन है",
+      "यह heritage preservation और cultural dissemination से जुड़ा है",
+      "यह केवल व्यापार मेला है",
+      "यह defense event है"
+    ],
+    answer: 1,
+    exp: "यह heritage preservation और cultural dissemination से जुड़ा है।"
+  },
+  {
+    q: "BIPEX-2024 में किस प्रकार का knowledge domain प्रमुख था?",
+    options: [
+      "Engineering",
+      "Humanities and heritage studies",
+      "Medical science",
+      "Space science"
+    ],
+    answer: 1,
+    exp: "इसमें humanities और heritage studies प्रमुख थे।"
+  },
+  {
+    q: "BIPEX-2024 जैसे आयोजन किस प्रकार की state capacity को दर्शाते हैं?",
+    options: [
+      "Military capacity",
+      "Cultural administrative capacity",
+      "Financial capacity only",
+      "Judicial capacity"
+    ],
+    answer: 1,
+    exp: "यह cultural administrative capacity को दर्शाते हैं।"
+  },
+  {
+    q: "BIPEX-2024 का सबसे सही conceptual takeaway क्या है?",
+    options: [
+      "Technology dominance",
+      "Cultural memory preservation through philately",
+      "Industrial growth",
+      "Agricultural modernization"
+    ],
+    answer: 1,
+    exp: "इसका conceptual takeaway cultural memory preservation through philately है।"
   },
 
   {
